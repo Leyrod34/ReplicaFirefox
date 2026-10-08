@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Evaluación final de Programación Web I - Mozilla Firefox</title>
+    <meta name="description" content="Réplica página de Firefox">
+    <meta name="keywords" content="Firefox">
+    <link rel="stylesheet" href="./estilos.css">
+
+    <script src="validacion.js" defer></script>
+</head>
+<body>
+    <div id="mainContainer">
+        <img id="banner" src="banner.jpg" alt="Mozilla Firefox">
+        <div id="contenedor">
+            <div id="contenido">
+                <h2>Formulario de Registro:</h2>
+                
+
+                <div id="mensaje-exito"></div>
+
+                <form id="formularioRegistro" novalidate>
+                    <fieldset>
+                        <legend>Entrada de datos</legend>
+                        
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre">
+                            <span class="error-msg" id="error-nombre"></span>
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="ci">CI</label>
+                            <input type="text" id="ci" name="ci">
+                            <span class="error-msg" id="error-ci"></span>
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" id="contrasena" name="contrasena">
+                            <span class="error-msg" id="error-contrasena"></span>
+                        </div>
+                        
+                        <div class="campo">
+                            <label for="confirmacion">Confirmacion</label>
+                            <input type="password" id="confirmacion" name="confirmacion">
+                            <span class="error-msg" id="error-confirmacion"></span>
+                        </div>
+                        
+                        <div class="botones">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Limpiar" id="btnLimpiar">
+                        </div>
+                    </fieldset>
+                </form>
+                
+            </div>
+            <div id="navegador">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Formulario de registro</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <center>
+            Evaluacion Final realizada por <a href="https://github.com/Leyrod34">Lázaro Leymel Rodríguez Alvarez</a>. Estándares web empleados XHTML 1.0 Strictic y CSS
+            </center>
+        </footer>
+    </div>
+</body>
+</html>
